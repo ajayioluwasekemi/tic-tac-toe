@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+    color: white;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    gap: 8px;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.cell {
+    width: 110px;
+    height: 110px;
+    background: #2c2c44;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.cell:hover {
+    background: #44446a;
+    transform: scale(1.05);
+}
+
+.winner {
+    background: #00c853 !important;
+    color: black;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #555;
+    color: white;
+}
